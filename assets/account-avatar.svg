@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <!-- Fondo verde -->
+  <rect width="150" height="150" fill="#4CAB4D"/>
+  <!-- Círculo blanco interior -->
+  <circle cx="75" cy="75" r="65" fill="#FFFFFF"/>
+  <!-- Iniciales "TU" centradas -->
+  <text x="75" y="92" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="#4CAB4D">TU</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Fondo azul -->
+  <rect width="64" height="64" fill="#3498DB"/>
+  <!-- Círculo blanco interior -->
+  <circle cx="32" cy="32" r="27" fill="#FFFFFF"/>
+  <!-- Flecha circular simple (arriba-izquierda) -->
+  <path d="M 10,54 A 27,27 0 1,0 54,10 M 15,58 Q 16,35 49,27" fill="none" stroke="#3498DB" stroke-width="4" stroke-linecap="round"/>
+</svg>

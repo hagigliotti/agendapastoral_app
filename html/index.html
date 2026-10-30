@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Pastoral APP</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/favicon.ico">
+</head>
+<body class="dark-theme">
+    <!-- Barra Superior -->
+    <header class="top-bar">
+        <div class="top-bar-left">
+            <img src="../assets/logo.svg" alt="Logo" class="app-logo">
+            <h1 class="app-title">Agenda Pastoral APP</h1>
+        </div>
+        
+        <div class="top-bar-center">
+            <button id="reorder-btn" title="Reubicar módulos" class="icon-btn">+</button>
+            <div class="module-grid-container">
+                <!-- Los módulos se generarán dinámicamente -->
+            </div>
+            <button id="show-hide-btn" title="Mostrar/Ocultar módulos" class="icon-btn">···</button>
+        </div>
+        
+        <div class="top-bar-right">
+            <a href="#" class="social-link" title="LinkedIn">in</a>
+            <a href="#" class="social-link" title="YouTube">▶</a>
+            <a href="#" class="social-link" title="Instagram">📷</a>
+            <a href="#" class="social-link" title="X (Twitter)">✖</a>
+            <a href="#" class="social-link" title="Facebook">f</a>
+            <a href="#" class="social-link" title="WhatsApp">Wa</a>
+            
+            <button id="account-menu-btn" class="icon-btn avatar-btn">
+                <img src="../assets/account-avatar.svg" alt="Cuenta" class="avatar-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Tarjeta de Cuenta (fija arriba izquierda) -->
+        <section id="account-card" class="card account-card">
+            <h2 class="card-title">Cuenta</h2>
+            <div class="account-info">
+                <img src="../assets/account-avatar.svg" alt="Avatar" class="avatar-large">
+                <div>
+                    <p class="account-name">Nombre Usuario</p>
+                    <p class="account-email">nombre@ejemplo.com</p>
+                    <span class="status-badge online">En línea</span>
+                </div>
+            </div>
+            <div class="account-links">
+                <a href="#" class="link-btn">Editar perfil</a>
+                <a href="#" class="link-btn">Gestionar cuenta Apple</a>
+                <a href="#" class="link-btn">Gestionar cuenta Google</a>
+            </div>
+        </section>
+
+        <!-- Programa de Asistencia Pastoral (módulo central) -->
+        <section id="pastoral-program" class="card card-large active-card">
+            <h2 class="card-title">Programa de Asistencia Pastoral</h2>
+            <div class="pastoral-content">
+                <div class="tab-container">
+                    <button class="tab-btn active" data-tab="iglesias">Iglesias</button>
+                    <button class="tab-btn" data-tab="miembros">Miembros</button>
+                    <button class="tab-btn" data-tab="visitas">Visitas</button>
+                    <button class="tab-btn" data-tab="registros">Registros</button>
+                </div>
+                
+                <div id="pastoral-tabs-content">
+                    <!-- Contenido dinámico según pestaña -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Menú de Cuenta (panel lateral) -->
+    <aside id="account-menu" class="sidebar-panel hidden">
+        <header class="sidebar-header">
+            <h3>Mi Cuenta</h3>
+            <button id="close-account-menu" class="icon-btn">×</button>
+        </header>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <h4>Cuenta</h4>
+                <a href="#" class="nav-link">Ver perfil</a>
+                <a href="#" class="nav-link">Editar perfil</a>
+                <a href="#" class="nav-link">Seguridad</a>
+            </div>
+            
+            <div class="nav-section">
+                <h4>Cuentas Vinculadas</h4>
+                <button class="nav-link" id="manage-apple">Gestionar Apple ID</button>
+                <button class="nav-link" id="manage-google">Gestionar Google</button>
+                <button class="nav-link" id="manage-microsoft">Gestionar Microsoft</button>
+            </div>
+            
+            <div class="nav-section">
+                <h4>Ajustes</h4>
+                <a href="#" class="nav-link">Notificaciones</a>
+                <a href="#" class="nav-link">Privacidad</a>
+                <a href="#" class="nav-link">Datos</a>
+            </div>
+            
+            <div class="nav-section danger">
+                <h4>Cuenta</h4>
+                <button class="nav-link" id="logout-btn">Cerrar sesión</button>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Overlay para menú de cuenta -->
+    <div id="account-menu-overlay" class="overlay hidden"></div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
